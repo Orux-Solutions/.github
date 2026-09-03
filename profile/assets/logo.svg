@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <linearGradient id="violet-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b5cf6" />
+      <stop offset="1" stop-color="#6d28d9" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#8b5cf6" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="28" fill="url(#violet-grad)" filter="url(#glow)" />
+  <text x="50%" y="65%" text-anchor="middle" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="62" letter-spacing="-2">a</text>
+  <circle cx="74" cy="26" r="6" fill="#c084fc" />
+</svg>
