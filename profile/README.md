@@ -3,77 +3,36 @@
 </p>
 
 <p align="center">
-  <strong>Plataforma SaaS Multi-Tenant modular de alto rendimiento para gestión integral de negocios y servicios</strong>
+  <strong>Software para simplificar la operación y el crecimiento de negocios modernos.</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Orux-Solutions/orux-docs"><img src="https://img.shields.io/badge/Docs-Central_Architecture-8b5cf6?style=for-the-badge&logo=gitbook&logoColor=white" alt="Docs"/></a>
-  <a href="https://github.com/Orux-Solutions/business-frontend"><img src="https://img.shields.io/badge/Frontend-React_19_%2B_Vite-61dafb?style=for-the-badge&logo=react&logoColor=black" alt="Frontend"/></a>
-  <a href="https://github.com/Orux-Solutions/business-backend"><img src="https://img.shields.io/badge/Backend-NestJS_%2B_MongoDB-e0234e?style=for-the-badge&logo=nestjs&logoColor=white" alt="Backend"/></a>
-  <a href="https://github.com/Orux-Solutions/orux-ci"><img src="https://img.shields.io/badge/CI%2FCD-Automated_Workflows-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD"/></a>
+  <img src="https://img.shields.io/badge/SaaS-Product_Platform-8b5cf6?style=for-the-badge" alt="SaaS" />
+  <img src="https://img.shields.io/badge/Modular-Scalable-06b6d4?style=for-the-badge" alt="Modular and scalable" />
+  <img src="https://img.shields.io/badge/Engineering-Product_Focused-ec4899?style=for-the-badge" alt="Product-focused engineering" />
 </p>
 
 ---
 
-### 🌐 Ecosistema de Repositorios
+## Qué hacemos
 
-Orux Solutions desarrolla una plataforma SaaS modular para operar negocios multi-tenant: administración, operación, experiencia de cliente, APIs, documentación y automatización. Los repositorios de producto son privados; esta página resume su propósito sin exponer código ni credenciales.
+Orux Solutions crea productos digitales y herramientas SaaS para que los equipos puedan administrar sus operaciones, servicios y experiencias de clientes desde una plataforma moderna.
 
-| Repositorio | Rol en el Ecosistema | Stack Tecnológico | Acceso |
-| :--- | :--- | :--- | :---: |
-| [**`orux-docs`**](https://github.com/Orux-Solutions/orux-docs) | **Documentación Central**: Arquitectura canónica, especificaciones técnicas de módulos dinámicos, ADRs y guías de contribución. | Markdown · Mermaid · JSON Schema | Privado |
-| [**`admin-frontend`**](https://github.com/Orux-Solutions/admin-frontend) | **Panel de administración**: Gestión de tenants, usuarios, permisos y configuración de la plataforma. | React 19 · Vite · TailwindCSS | Privado |
-| [**`admin-backend`**](https://github.com/Orux-Solutions/admin-backend) | **API de administración**: Autenticación, gobierno de plataforma y operaciones administrativas. | NestJS · TypeScript · MongoDB | Privado |
-| [**`business-frontend`**](https://github.com/Orux-Solutions/business-frontend) | **Backoffice de negocio**: Operación multi-tenant con módulos dinámicos por capabilities. | React 19 · Vite · TailwindCSS · TanStack Query | Privado |
-| [**`business-backend`**](https://github.com/Orux-Solutions/business-backend) | **API de negocio**: Operaciones, catálogo, reservas, pedidos y aislamiento por tenant. | NestJS · TypeScript · MongoDB | Privado |
-| [**`client-frontend`**](https://github.com/Orux-Solutions/client-frontend) | **Experiencia de cliente**: Menú, reservas y pedidos desde una PWA pública. | React 19 · Vite · PWA | Privado |
-| [**`client-backend`**](https://github.com/Orux-Solutions/client-backend) | **API pública cliente**: Bootstrap de comercios, catálogo y operaciones de autoservicio. | NestJS · TypeScript · MongoDB | Privado |
-| [**`orux-ci`**](https://github.com/Orux-Solutions/orux-ci) | **Infraestructura CI/CD**: Workflows reutilizables, validaciones y trazabilidad de releases. | GitHub Actions · Python · Docker | Privado |
+Nuestro enfoque combina:
 
----
+- experiencias simples para usuarios y equipos;
+- productos modulares que pueden crecer con cada negocio;
+- automatización para reducir trabajo repetitivo;
+- ingeniería orientada a confiabilidad, rendimiento y mantenibilidad.
 
-### 📐 Principios de Arquitectura
+## Tecnología
 
-El ecosistema **Orux** se rige por especificaciones técnicas rigurosas para garantizar escalabilidad, seguridad multi-inquilino y consistencia en el código:
+Trabajamos con tecnologías modernas de frontend, backend, datos, automatización y entrega continua. La selección concreta depende de cada producto y de sus necesidades.
 
-#### 1. Jerarquía Canónica Estricta de 3 Niveles
-```text
-1. SECCIÓN   (Área departamental macro: services, commerce, gastronomy, crm, marketing, core)
-   └── 2. PÁGINA   (Pantalla concreta navegable: bookings, catalog, orders, pos, tables)
-         └── 3. MÓDULOS (Capabilities dinámicas que se activan/desactivan según el plan del tenant)
-```
+## Contacto
 
-#### 2. Seguridad & Aislamiento Tenant-Scoped
-* **El backend es la única fuente de verdad para autorización.** Las validaciones frontend optimizan la UX pero jamás sustituyen las guards en los endpoints.
-* **Aislamiento Multi-Tenant Estricto:** Toda consulta o mutación a la base de datos filtra de forma obligatoria e inmutable por `tenantId`.
-* **Zero-Leakage:** Respuestas `403 Forbidden` neutrales que nunca exponen la existencia de recursos de otros inquilinos.
+Para consultas, colaboraciones o información sobre nuestros productos, contactá al equipo de Orux Solutions.
 
-#### 3. Módulos Dinámicos & Capabilities
-* Cada funcionalidad dentro de una página (`sección.página.módulo`) es evaluada contra las capabilities activas del tenant y del plan comercial suscrito.
-
----
-
-### 🛠️ Stack Tecnológico Global
-
-<p align="left">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+<p align="center">
+  <sub>© 2026 Orux Solutions · Building useful software for modern businesses</sub>
 </p>
-
----
-
-### 📖 Primeros Pasos y Contribución
-
-Para explorar los lineamientos de arquitectura, convenciones de ramas y desarrollo local:
-* Consultá el [**Mapa de Documentación en orux-docs**](https://github.com/Orux-Solutions/orux-docs).
-* Revisá la [**Guía de Contribución**](https://github.com/Orux-Solutions/orux-docs/blob/main/docs/contributing.md).
-
-<div align="center">
-  <sub>© 2026 Orux Solutions · Built for modern modular business operations</sub>
-</div>
