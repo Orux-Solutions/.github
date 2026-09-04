@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Orux-Solutions/.github/main/profile/assets/banner.svg" alt="Áurea Ecosystem" width="100%" />
+  <img src="https://raw.githubusercontent.com/Orux-Solutions/.github/main/profile/assets/banner.svg" alt="Orux Solutions" width="100%" />
 </p>
 
 <p align="center">
@@ -8,8 +8,8 @@
 
 <p align="center">
   <a href="https://github.com/Orux-Solutions/orux-docs"><img src="https://img.shields.io/badge/Docs-Central_Architecture-8b5cf6?style=for-the-badge&logo=gitbook&logoColor=white" alt="Docs"/></a>
-  <a href="https://github.com/Orux-Solutions/backoffice-fe-orux"><img src="https://img.shields.io/badge/Frontend-React_19_%2B_Vite-61dafb?style=for-the-badge&logo=react&logoColor=black" alt="Frontend"/></a>
-  <a href="https://github.com/Orux-Solutions/backoffice-be-orux"><img src="https://img.shields.io/badge/Backend-NestJS_%2B_MongoDB-e0234e?style=for-the-badge&logo=nestjs&logoColor=white" alt="Backend"/></a>
+  <a href="https://github.com/Orux-Solutions/business-frontend"><img src="https://img.shields.io/badge/Frontend-React_19_%2B_Vite-61dafb?style=for-the-badge&logo=react&logoColor=black" alt="Frontend"/></a>
+  <a href="https://github.com/Orux-Solutions/business-backend"><img src="https://img.shields.io/badge/Backend-NestJS_%2B_MongoDB-e0234e?style=for-the-badge&logo=nestjs&logoColor=white" alt="Backend"/></a>
   <a href="https://github.com/Orux-Solutions/orux-ci"><img src="https://img.shields.io/badge/CI%2FCD-Automated_Workflows-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD"/></a>
 </p>
 
@@ -17,18 +17,24 @@
 
 ### 🌐 Ecosistema de Repositorios
 
+Orux Solutions desarrolla una plataforma SaaS modular para operar negocios multi-tenant: administración, operación, experiencia de cliente, APIs, documentación y automatización. Los repositorios de producto son privados; esta página resume su propósito sin exponer código ni credenciales.
+
 | Repositorio | Rol en el Ecosistema | Stack Tecnológico | Acceso |
 | :--- | :--- | :--- | :---: |
-| [**`orux-docs`**](https://github.com/Orux-Solutions/orux-docs) | **Documentación Central**: Arquitectura canónica, especificaciones técnicas de módulos dinámicos, ADRs y guías de contribución. | Markdown · Mermaid · JSON Schema | Public |
-| [**`backoffice-fe-orux`**](https://github.com/Orux-Solutions/backoffice-fe-orux) | **Frontend del Backoffice**: Interfaz de operador multi-tenant con activación dinámica de componentes por capabilities. | React 19 · Vite · TailwindCSS v4 · TanStack Query · Zustand | Public |
-| [**`backoffice-be-orux`**](https://github.com/Orux-Solutions/backoffice-be-orux) | **API Core Backend**: Motor transaccional con aislamiento estricto por tenant, autenticación JWT y guards de autorización. | NestJS · TypeScript · MongoDB · Mongoose | Public |
-| [**`orux-ci`**](https://github.com/Orux-Solutions/orux-ci) | **Infraestructura CI/CD**: Pipelines reutilizables, validaciones de commits, trazabilidad automatizada de issues y releases. | GitHub Actions · Python · Docker | Public |
+| [**`orux-docs`**](https://github.com/Orux-Solutions/orux-docs) | **Documentación Central**: Arquitectura canónica, especificaciones técnicas de módulos dinámicos, ADRs y guías de contribución. | Markdown · Mermaid · JSON Schema | Privado |
+| [**`admin-frontend`**](https://github.com/Orux-Solutions/admin-frontend) | **Panel de administración**: Gestión de tenants, usuarios, permisos y configuración de la plataforma. | React 19 · Vite · TailwindCSS | Privado |
+| [**`admin-backend`**](https://github.com/Orux-Solutions/admin-backend) | **API de administración**: Autenticación, gobierno de plataforma y operaciones administrativas. | NestJS · TypeScript · MongoDB | Privado |
+| [**`business-frontend`**](https://github.com/Orux-Solutions/business-frontend) | **Backoffice de negocio**: Operación multi-tenant con módulos dinámicos por capabilities. | React 19 · Vite · TailwindCSS · TanStack Query | Privado |
+| [**`business-backend`**](https://github.com/Orux-Solutions/business-backend) | **API de negocio**: Operaciones, catálogo, reservas, pedidos y aislamiento por tenant. | NestJS · TypeScript · MongoDB | Privado |
+| [**`client-frontend`**](https://github.com/Orux-Solutions/client-frontend) | **Experiencia de cliente**: Menú, reservas y pedidos desde una PWA pública. | React 19 · Vite · PWA | Privado |
+| [**`client-backend`**](https://github.com/Orux-Solutions/client-backend) | **API pública cliente**: Bootstrap de comercios, catálogo y operaciones de autoservicio. | NestJS · TypeScript · MongoDB | Privado |
+| [**`orux-ci`**](https://github.com/Orux-Solutions/orux-ci) | **Infraestructura CI/CD**: Workflows reutilizables, validaciones y trazabilidad de releases. | GitHub Actions · Python · Docker | Privado |
 
 ---
 
 ### 📐 Principios de Arquitectura
 
-El ecosistema **Áurea** se rige por especificaciones técnicas rigurosas para garantizar escalabilidad, seguridad multi-inquilino y consistencia en el código:
+El ecosistema **Orux** se rige por especificaciones técnicas rigurosas para garantizar escalabilidad, seguridad multi-inquilino y consistencia en el código:
 
 #### 1. Jerarquía Canónica Estricta de 3 Niveles
 ```text
@@ -69,5 +75,5 @@ Para explorar los lineamientos de arquitectura, convenciones de ramas y desarrol
 * Revisá la [**Guía de Contribución**](https://github.com/Orux-Solutions/orux-docs/blob/main/docs/contributing.md).
 
 <div align="center">
-  <sub>© 2026 Áurea Ecosystem · Built for modern modular business operations</sub>
+  <sub>© 2026 Orux Solutions · Built for modern modular business operations</sub>
 </div>
